@@ -10,14 +10,14 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Manya Kaushik Portfolio',
-  domain: '',
+  domain: 'https://manya-kaushik.vercel.app/',
   author: 'Manya Kaushik',
 
   // open graph metadata (optional)
-  description: 'Product Designer, M.Des Student, NID, Bangalore',
+  description: 'Product Designer, M.Des Student @ NID, Bangalore',
 
   // social usernames (optional)
-  twitter: 'hellextraa',
+  // twitter: 'hellextraa',
   // github: 'transitive-bullshit',
   linkedin: 'manyakaushikprofile',
   // mastodon: '#', // optional mastodon profile URL, provides link verification

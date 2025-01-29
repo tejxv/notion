@@ -38,7 +38,7 @@ const socialLinks: SocialLink[] = [
   config.linkedin && {
     name: 'linkedin',
     href: `https://www.linkedin.com/in/${config.linkedin}`,
-    title: `LinkedIn ${config.author}`,
+    title: `LinkedIn of ${config.author}`,
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
         <path d='M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z' />
@@ -63,7 +63,47 @@ const socialLinks: SocialLink[] = [
     title: `YouTube ${config.youtube}`,
     icon: (
       <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'>
-        <path d='M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z' />
+        <path d='M10,15L15.19,12L10,9V15M21.56...' />
+      </svg>
+    )
+  },
+
+  // Hardcoded Medium link
+  {
+    name: 'medium',
+    href: 'https://medium.com/@manya.manuseema',
+    title: 'Medium @manya.manuseema',
+    icon: (
+      <svg
+        stroke='currentColor'
+        fill='currentColor'
+        stroke-width='0'
+        viewBox='0 0 448 512'
+        height='1em'
+        width='1em'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path d='M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z'></path>
+      </svg>
+    )
+  },
+
+  // Hardcoded Behance link
+  {
+    name: 'Behance',
+    href: 'https://www.behance.net/manyakaushik',
+    title: 'Behance @manyakaushik',
+    icon: (
+      <svg
+        stroke='currentColor'
+        fill='currentColor'
+        stroke-width='0'
+        viewBox='0 0 576 512'
+        height='1em'
+        width='1em'
+        xmlns='http://www.w3.org/2000/svg'
+      >
+        <path d='M232 237.2c31.8-15.2 48.4-38.2 48.4-74 0-70.6-52.6-87.8-113.3-87.8H0v354.4h171.8c64.4 0 124.9-30.9 124.9-102.9 0-44.5-21.1-77.4-64.7-89.7zM77.9 135.9H151c28.1 0 53.4 7.9 53.4 40.5 0 30.1-19.7 42.2-47.5 42.2h-79v-82.7zm83.3 233.7H77.9V272h84.9c34.3 0 56 14.3 56 50.6 0 35.8-25.9 47-57.6 47zm358.5-240.7H376V94h143.7v34.9zM576 305.2c0-75.9-44.4-139.2-124.9-139.2-78.2 0-131.3 58.8-131.3 135.8 0 79.9 50.3 134.7 131.3 134.7 61.3 0 101-27.6 120.1-86.3H509c-6.7 21.9-34.3 33.5-55.7 33.5-41.3 0-63-24.2-63-65.3h185.1c.3-4.2.6-8.7.6-13.2zM390.4 274c2.3-33.7 24.7-54.8 58.5-54.8 35.4 0 53.2 20.8 56.2 54.8H390.4z'></path>
       </svg>
     )
   }

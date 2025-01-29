@@ -1,5 +1,7 @@
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
+import { FaBehance } from '@react-icons/all-files/fa/FaBehance'
+import { FaMedium } from '@react-icons/all-files/fa/FaMedium'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
@@ -36,7 +38,7 @@ export function FooterImpl() {
   return (
     <footer className={styles.footer}>
       <div className={styles.copyright}>
-        Copyright {currentYear} {config.author}
+        © {currentYear} {config.author}
       </div>
 
       <div className={styles.settings}>
@@ -56,13 +58,13 @@ export function FooterImpl() {
       <div className={styles.social}>
         {config.twitter && (
           <a
-            className={styles.twitter}
-            href={`https://twitter.com/${config.twitter}`}
-            title={`Twitter @${config.twitter}`}
+            className={styles.linkedin}
+            href={`https://www.behance.net/manyakaushik`}
+            title={`Behance ${config.author}`}
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaTwitter />
+            <FaBehance />
           </a>
         )}
 
@@ -102,15 +104,35 @@ export function FooterImpl() {
         )}
 
         {config.linkedin && (
-          <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/${config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaLinkedin />
-          </a>
+          <>
+            <a
+              className={styles.linkedin}
+              href={`https://www.linkedin.com/in/${config.linkedin}`}
+              title={`LinkedIn of ${config.author}`}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              className={styles.twitter}
+              href={`https://www.behance.net/manyakaushik`}
+              title={`Behance of Manya Kaushik`}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaBehance />
+            </a>
+            <a
+              className={styles.twitter}
+              href={`https://medium.com/@manya.manuseema`}
+              title={`Medium of Manya Kaushik`}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaMedium />
+            </a>
+          </>
         )}
 
         {config.newsletter && (
