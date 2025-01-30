@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: "Inter", serif;
 }
 
 a {
@@ -20,7 +21,6 @@ body {
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
   font-family: var(--notion-font); */
-  font-family: "Inter", serif;
   overflow-x: hidden;
 }
 
