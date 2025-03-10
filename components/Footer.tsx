@@ -152,7 +152,7 @@ export function FooterImpl() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <FaEnvelopeOpenText />
+            <FaRegEnvelope />
           </a>
         )}
 
