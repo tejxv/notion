@@ -1,4 +1,4 @@
-import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
+import { FaRegEnvelope } from '@react-icons/all-files/fa/FaRegEnvelope'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaBehance } from '@react-icons/all-files/fa/FaBehance'
 import { FaMedium } from '@react-icons/all-files/fa/FaMedium'
@@ -131,6 +131,15 @@ export function FooterImpl() {
               rel='noopener noreferrer'
             >
               <FaMedium />
+            </a>
+            <a
+              className={styles.twitter}
+              href={`mailto:manya.k@nid.edu`}
+              title={`Email Manya Kaushik`}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaRegEnvelope />
             </a>
           </>
         )}
