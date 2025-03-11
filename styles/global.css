@@ -21,7 +21,16 @@ body {
     'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
     'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
   font-family: var(--notion-font); */
+  font-family: "UberMove", sans-serif;
   overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "UberMove";
+  src: url("/public/src/fonts/UberMoveBold.otf") format("otf"),
+    url("/public/src/fonts/UberMoveMedium.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 .static-tweet blockquote {
@@ -64,4 +73,8 @@ body {
 
 .notion-block-18a221e17df681f19c42d1dbb4cb4ba1 {
   text-wrap: balance;
+}
+
+footer {
+  padding-bottom: 4rem !important;
 }
