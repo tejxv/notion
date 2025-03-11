@@ -15,9 +15,8 @@ import useDarkModeImpl from '@fisch0920/use-dark-mode'
 export function useDarkMode() {
   const darkMode = useDarkModeImpl(false, {
     classNameDark: 'dark-mode',
-    classNameLight: 'light-mode',
-    // Force initial value to be false (light mode)
-    value: false
+    classNameLight: 'light-mode'
+    // Remove the "value: false" line as it's not a valid property
   })
 
   // Force light mode if somehow dark mode got enabled
