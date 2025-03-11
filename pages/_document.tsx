@@ -7,6 +7,23 @@ export default class MyDocument extends Document {
       <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}>
         <Html lang='en'>
           <Head>
+            <Head>
+              {/* Google tag (gtag.js) */}
+              <script
+                async
+                src='https://www.googletagmanager.com/gtag/js?id=G-557KCFZ1Q9'
+              ></script>
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-557KCFZ1Q9');
+              `
+                }}
+              />
+            </Head>
             <link rel='shortcut icon' href='/favicon.ico' />
             <link
               rel='icon'
