@@ -12,27 +12,32 @@ import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
 import * as React from 'react'
 
 import * as config from '@/lib/config'
-import { useDarkMode } from '@/lib/use-dark-mode'
+// Don't import the dark mode hook when dark mode is disabled
+// import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
 
-// TODO: merge the data and icons from PageSocial with the social links in Footer
+// Config flag to enable/disable dark mode
+const darkModeON = false
 
 export function FooterImpl() {
   const [hasMounted, setHasMounted] = React.useState(false)
-  const { isDarkMode, toggleDarkMode } = useDarkMode()
   const currentYear = new Date().getFullYear()
 
-  const onToggleDarkMode = React.useCallback(
-    (e) => {
-      e.preventDefault()
-      toggleDarkMode()
-    },
-    [toggleDarkMode]
-  )
-
+  // Force light mode when component mounts
   React.useEffect(() => {
     setHasMounted(true)
+
+    // Force light mode
+    document.body.classList.add('light-mode')
+    document.body.classList.remove('dark-mode')
+
+    // Update localStorage
+    try {
+      localStorage.setItem('darkMode', JSON.stringify(false))
+    } catch (err) {
+      console.error('Failed to set localStorage', err)
+    }
   }, [])
 
   return (
@@ -42,17 +47,7 @@ export function FooterImpl() {
       </div>
 
       <div className={styles.settings}>
-        {hasMounted && (
-          <a
-            className={styles.toggleDarkMode}
-            href='#'
-            role='button'
-            onClick={onToggleDarkMode}
-            title='Toggle dark mode'
-          >
-            {isDarkMode ? <IoMoonSharp /> : <IoSunnyOutline />}
-          </a>
-        )}
+        {/* Dark mode toggle is completely removed */}
       </div>
 
       <div className={styles.social}>
