@@ -1,9 +1,10 @@
 import React from 'react'
 
-const ResumePage = () => {
+function ResumePage() {
   return (
     <iframe
       src='./Manya Kaushik Resume.pdf'
+      title='Resume of Manya Kaushik'
       style={{
         position: 'absolute',
         top: 0,
