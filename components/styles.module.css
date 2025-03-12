@@ -129,16 +129,18 @@
     flex-direction: column;
   }
 
-  .footer > div {
+  .footer>div {
     margin-top: 1em;
   }
 
   .footer .settings {
     order: 1;
   }
+
   .footer .social {
     order: 2;
   }
+
   .footer .copyright {
     order: 3;
   }
@@ -191,14 +193,17 @@
 }
 
 @keyframes octocat-wave {
+
   0%,
   100% {
     transform: rotate(0);
   }
+
   20%,
   60% {
     transform: rotate(-25deg);
   }
+
   40%,
   80% {
     transform: rotate(10deg);
@@ -217,4 +222,39 @@
 
 .hidden {
   visibility: hidden;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  min-width: 0;
+  font-size: 14px;
+  transition: background-color 20ms ease-in 0s;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  height: 32px;
+}
+
+.resumeButton {
+  font-size: larger;
+  font-weight: 500;
+  border-radius: 20px !important;
+  background: rgba(55, 53, 47, 0.08);
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  padding: 0 12px;
+  color: inherit;
+}
+
+.resumeButton:hover {
+  background: rgba(55, 53, 47, 0.16);
+}
+
+.dark-mode .resumeButton {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .resumeButton:hover {
+  background: rgba(255, 255, 255, 0.16);
 }

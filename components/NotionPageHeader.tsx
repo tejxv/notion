@@ -9,6 +9,7 @@ import { isSearchEnabled, navigationLinks, navigationStyle } from '@/lib/config'
 import { useDarkMode } from '@/lib/use-dark-mode'
 
 import styles from './styles.module.css'
+import Link from 'next/link'
 
 function ToggleThemeButton() {
   const [hasMounted, setHasMounted] = React.useState(false)
@@ -79,9 +80,22 @@ export function NotionPageHeader({
             })
             .filter(Boolean)}
 
-          <ToggleThemeButton />
+          {/* <ToggleThemeButton /> */}
 
           {isSearchEnabled && <Search block={block} title={null} />}
+
+          <Link
+            href='/resume'
+            className={cs(
+              styles.navLink,
+              'breadcrumb',
+              'button',
+              'resumeButton',
+              styles.resumeButton
+            )}
+          >
+            Resume
+          </Link>
         </div>
       </div>
     </header>
